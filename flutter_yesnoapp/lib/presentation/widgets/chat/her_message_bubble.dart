@@ -40,10 +40,19 @@ class _ImageBubble extends StatelessWidget {
     return ClipRRect(
         borderRadius: BorderRadius.circular(20),
         child: Image.network(
-            "https://yesno.wtf/assets/no/7-331da2464250a1459cd7d41715e1f67d.gif",
-            width: size.width * 0.7,
-            height: 150,
-            fit: BoxFit.cover,
-            ));
+          "https://yesno.wtf/assets/no/7-331da2464250a1459cd7d41715e1f67d.gif",
+          width: size.width * 0.7,
+          height: 150,
+          fit: BoxFit.cover,
+          loadingBuilder: (context, child, loadingProgress) {
+            if (loadingProgress == null) return child;
+            return Container(
+              width: size.width * 0.7,
+              height: 150,
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5 ),
+              child: Text('Enviando imagen'),
+            );
+          },
+        ));
   }
 }
