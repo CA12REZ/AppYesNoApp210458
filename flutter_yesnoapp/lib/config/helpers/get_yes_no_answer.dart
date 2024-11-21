@@ -1,15 +1,14 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_yesnoapp/domain/entities/message.dart';
+import 'package:flutter_yesnoapp/infrastructure/models/yes_no_model.dart';
 
 class GetYesNoAnswer {
   final _dio = Dio();
   Future<Message> getAnswer() async {
     final response = await _dio.get('https://yesno.wtf/api');
+   
+    final yesNoModel = YesNoModel.fromJsonMap(response.data);
 
-    return Message(
-    text: response.data['answer'], 
-    fromwho: Fromwho.hers,
-    imageUrl: response.data['image'], 
-    );
+    return yesNoModel.toMessageEntity();
   }
 }
