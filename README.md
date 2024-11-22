@@ -1,7 +1,6 @@
-# Universidad Tecnológica de Xicotepec de Juárez
 
 ## Desarrollo Móvil Integral
-
+![Universidad Tecnológica de Xicotepec de Juárezl](flutter_yesnoapp/assets/img/PORTADA.png)
 ### DMI-10B-YesNoApp 210458
 **Por: Jorge Cazarez Cruz**
 
