@@ -54,7 +54,7 @@ La estructura de las carpetas es la siguiente:
 | ![MyMessageBubble](flutter_yesnoapp/assets/img/mymessagebuble.png) | `MyMessageBubble` estiliza los mensajes enviados por el usuario. Utiliza el color primario del tema como fondo y texto blanco para garantizar la visibilidad. |
 | ![OtherMessageBubble](flutter_yesnoapp/assets/img/otermessagebuble.png) | `OtherMessageBubble` muestra los mensajes de otros usuarios con un diseño limpio, utilizando un color secundario de fondo y márgenes adecuados para separar los mensajes. |
 | ![ImageBubble](flutter_yesnoapp/assets/img/imagebublle.png) | `ImageBubble` presenta imágenes dentro del chat, con bordes redondeados y un diseño responsive. Además, incluye un indicador de carga mientras la imagen se está cargando. |
-| ![MessageFieldBox](flutter_yesnoapp/assets/img/messagefielbox) | `MessageFieldBox` es el campo de texto donde los usuarios escriben sus mensajes. Cuenta con un botón estilizado para el envío y maneja el enfoque de manera eficiente para mejorar la experiencia de uso. |
+| ![MessageFieldBox](flutter_yesnoapp/assets/img/messagefielbox.png) | `MessageFieldBox` es el campo de texto donde los usuarios escriben sus mensajes. Cuenta con un botón estilizado para el envío y maneja el enfoque de manera eficiente para mejorar la experiencia de uso. |
 
 ---
 
@@ -64,7 +64,7 @@ La estructura de las carpetas es la siguiente:
 |-------------|-----------------|
 | ![YesNoModel](flutter_yesnoapp/assets/img/yesnomodel.png) | `YesNoModel` es un modelo que maneja las respuestas de tipo "sí" o "no". Este modelo transforma las respuestas en formato JSON y las convierte en un objeto que puede ser utilizado dentro del flujo del chat. |
 | ![ChatProvider](flutter_yesnoapp/assets/img/chatprovider.png) | `ChatProvider` gestiona el estado del chat, incluyendo el envío de mensajes y la respuesta automática. También es responsable de la actualización en tiempo real de la interfaz de usuario. |
-| ![GetYesNoAnswer](flutter_yesnoapp/assets/img/getyesnoanswer.png) | `GetYesNoAnswer` conecta con la API `yesno.wtf` para obtener respuestas de tipo "sí" o "no". Luego las transforma en objetos internos que se integran al flujo del chat. |
+| ![GetYesNoAnswer](flutter_yesnoapp/assets/img/getyesnoasnwer.png) | `GetYesNoAnswer` conecta con la API `yesno.wtf` para obtener respuestas de tipo "sí" o "no". Luego las transforma en objetos internos que se integran al flujo del chat. |
 | ![MoveScrollToBottom](flutter_yesnoapp/assets/img/funcion.png) | El método `moveScrollToBottom` permite que los mensajes más recientes sean visibles, desplazando automáticamente la vista al final del chat. Esto asegura que los usuarios siempre vean los mensajes más nuevos. |
 
 ---
