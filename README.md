@@ -64,7 +64,7 @@ La estructura de las carpetas es la siguiente:
 | ![YesNoModel](flutter_yesnoapp/assets/img/yesnomodel.png) | `YesNoModel` es un modelo que maneja las respuestas de tipo "sí" o "no". Este modelo transforma las respuestas en formato JSON y las convierte en un objeto que puede ser utilizado dentro del flujo del chat. |
 | ![ChatProvider](flutter_yesnoapp/assets/img/chatprovider.png) | `ChatProvider` gestiona el estado del chat, incluyendo el envío de mensajes y la respuesta automática. También es responsable de la actualización en tiempo real de la interfaz de usuario. |
 | ![GetYesNoAnswer](flutter_yesnoapp/assets/img/getyesnoasnwer.png) | `GetYesNoAnswer` conecta con la API `yesno.wtf` para obtener respuestas de tipo "sí" o "no". Luego las transforma en objetos internos que se integran al flujo del chat. |
-| ![MoveScrollToBottom](flutter_yesnoapp/assets/img/funcion.png) | El método `moveScrollToBottom` permite que los mensajes más recientes sean visibles, desplazando automáticamente la vista al final del chat. Esto asegura que los usuarios siempre vean los mensajes más nuevos. |
+| ![MoveScrollToBottom](flutter_yesnoapp/assets/img/funcion.png) | Es una funcion `moveScrollToBottom` permite que los mensajes más recientes sean visibles, desplazando automáticamente la vista al final del chat. Esto asegura que los usuarios siempre vean los mensajes más nuevos. |
 
 ---
 
